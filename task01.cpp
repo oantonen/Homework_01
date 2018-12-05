@@ -12,14 +12,12 @@ public:
 	} // #1
 	Person(const std::string & ln, const char * fn = "Heyyou") {
 		mLastName = ln;
-		if (fn != nullptr) {
-			int i = 0;
-			while (i < LIMIT - 1 && fn[i]) {
-				mFirstName[i] = fn[i];
-				i++;
-			}
-			mFirstName[i] = '\0';
+		int i = 0;
+		while (i < LIMIT - 1 && fn[i]) {
+			mFirstName[i] = fn[i];
+			i++;
 		}
+		mFirstName[i] = '\0';
 	}
  // #2
 // the following methods display mLastName and mFirstName
@@ -32,3 +30,5 @@ public:
 		std::cout << mLastName << ", " << mFirstName << std::endl;
 	}
 };
+
+Person A{};
