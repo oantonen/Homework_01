@@ -30,5 +30,3 @@ public:
 		std::cout << mLastName << ", " << mFirstName << std::endl;
 	}
 };
-
-Person A{};
